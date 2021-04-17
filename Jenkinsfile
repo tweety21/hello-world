@@ -15,6 +15,7 @@ pipeline {
         }
         stage('Maven build'){
             steps {
+                sh'whoami'
                 sh'cd $WORKSPACE'
                 sh'mvn clean install'
             }
