@@ -15,7 +15,8 @@ pipeline {
         }
         stage('Maven build'){
             steps {
-                sh'whoami'
+                sh'export PATH=$PATH:/opt/maven/apache-maven-3.6.3/bin/mvn'
+                sh'mvn --version'
                 sh'cd $WORKSPACE'
                 sh'mvn clean install'
             }
