@@ -8,7 +8,10 @@ pipeline {
             }
         }
         stage('Test echo'){
-            sh'pwd;ls -lart'
+            steps {
+                sh'pwd;ls -lart'
+        
+            }
         }
     }
 }
