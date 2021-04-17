@@ -8,8 +8,7 @@ pipeline {
             }
         }
         stage('Test echo'){
-            sh'echo "I am inside container doing echo!!!!"'
-            sh'echo "Done!"'
+            sh'pwd;ls -lart'
         }
     }
 }
