@@ -13,5 +13,11 @@ pipeline {
         
             }
         }
+        stage('Maven build'){
+            steps {
+                sh'cd $WORKSPACE'
+                sh'mvn clean install'
+            }
+        }
     }
 }
