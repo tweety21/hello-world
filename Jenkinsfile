@@ -8,8 +8,8 @@ pipeline {
             }
         }
         stage('Test echo'){
-            echo "I am inside container doing echo!!!!"
-            echo "Done!"
+            sh'echo "I am inside container doing echo!!!!"'
+            sh'echo "Done!"'
         }
     }
 }
