@@ -19,6 +19,7 @@ pipeline {
                 sh'export M2=/opt/maven/apache-maven-3.6.3/bin'
                 sh'export M2_HOME=/opt/maven/apache-maven-3.6.3'
                 sh'mvn --version'
+                
                 sh'cd $WORKSPACE'
                 sh'mvn clean install'
             }
